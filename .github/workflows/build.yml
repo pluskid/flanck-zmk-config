@@ -45,17 +45,17 @@ jobs:
         id: west-zephyr-export
         with:
           args: 'zephyr-export'
-      - name: West Build (Reviung41)
+      - name: West Build (Flanck)
         uses: 'docker://zmkfirmware/zephyr-west-action-arm:latest'
-        id: west-build-reviung41
+        id: west-build-flanck
         with:
-          args: 'build "-s zmk/app -b nice_nano -- -DSHIELD=reviung41 -DZMK_CONFIG=/github/workspace/config"'
-      - name: Reviung41 Kconfig file
+          args: 'build "-s zmk/app -b nice_nano -- -DSHIELD=flanck -DZMK_CONFIG=/github/workspace/config"'
+      - name: Flanck Kconfig file
         run: cat build/zephyr/.config | grep -v "^#" | grep -v "^$"
       - name: Rename zmk.uf2
-        run: cp build/zephyr/zmk.uf2 reviung41_nice_nano.uf2
-      - name: Archive (Reviung41)
+        run: cp build/zephyr/zmk.uf2 flanck_nice_nano.uf2
+      - name: Archive (Flanck)
         uses: actions/upload-artifact@v2
         with:
           name: firmware
-          path: reviung41_nice_nano.uf2
+          path: flanck_nice_nano.uf2
