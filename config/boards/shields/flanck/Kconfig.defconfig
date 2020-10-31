@@ -1,0 +1,6 @@
+if SHIELD_FLANCK
+
+config ZMK_KEYBOARD_NAME
+    default "Flanck Keyboard (Bluetooth)"
+
+endif
