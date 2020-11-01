@@ -10,7 +10,7 @@
             bindings = <
    &kp TAB   &kp Q &kp W    &kp F    &kp P &kp B   &kp J   &kp L &kp U    &kp Y    &kp SCLN &kp BKSP
    &lt 3 ESC &kp A &kp R    &kp S    &kp T &kp G   &kp M   &kp N &kp E    &kp I    &kp O    &mt MOD_RCTL QUOT
-   &kp LSFT  &kp Z &kp X    &kp C    &kp D &kp V   &kp K   &kp H &kp CMMA &kp DOT  &kp FSLH &mt RSFT RET
+   &kp RSFT  &kp Z &kp X    &kp C    &kp D &kp V   &kp K   &kp H &kp CMMA &kp DOT  &kp FSLH &mt LSFT RET
    &kp LCTL  &none &kp LALT &kp LGUI &mo 1 &kp SPC &kp SPC &mo 2 &kp LARW &kp DARW &kp UARW &kp RARW
             >;
         };
