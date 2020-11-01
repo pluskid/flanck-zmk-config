@@ -9,9 +9,6 @@
         default_layer {
             bindings = <
    &kp TAB  &kp Q &kp W    &kp F    &kp P &kp B   &kp J   &kp L &kp U    &kp Y    &kp SCLN &kp BKSP
-   &kp LCTL &kp A &kp R    &kp S    &kp T &kp G   &kp M   &kp N &kp E    &kp I    &kp O    &kp QUOT
-   &kp LSFT &kp Z &kp X    &kp C    &kp D &kp V   &kp K   &kp H &kp CMMA &kp DOT  &kp FSLH &mt RSFT RET
-   &kp LCTL &none &kp LALT &kp LGUI &mo 1 &kp SPC &kp SPC &mo 2 &kp LARW &kp DARW &kp UARW &kp RARW
             >;
         };
 
@@ -19,9 +16,6 @@
 // TODO: fix undesrcope after the mkp feature is added
             bindings = <
    &trans   &none     &kp LBKT  &kp RBKT  &none     &none     &none     &none     &kp MINUS &kp MINUS &none     &trans
-   &kp GRAV &kp NUM_1 &kp NUM_2 &kp NUM_3 &kp NUM_4 &kp NUM_5 &kp NUM_6 &kp NUM_7 &kp NUM_8 &kp NUM_9 &kp NUM_0 &kp PIPE
-   &trans   &none     &trans    &none     &none     &none     &none     &none     &trans    &trans    &trans    &trans
-   &trans   &trans    &trans    &trans    &trans    &trans    &trans    &mo 3     &trans    &trans    &trans    &trans 
             >;
         };
 
@@ -29,18 +23,12 @@
 // TODO: fix this layer once mkp feature is added
             bindings = <
   &trans   &none     &kp LBKT  &kp RBKT  &none     &none     &none     &none     &kp MINUS &kp MINUS &none     &trans
-  &kp GRAV &kp NUM_1 &kp NUM_2 &kp NUM_3 &kp NUM_4 &kp NUM_5 &kp NUM_6 &kp NUM_7 &kp NUM_8 &kp NUM_9 &kp NUM_0 &kp PIPE
-  &trans   &none     &trans    &none     &none     &none     &none     &none     &trans    &trans    &trans    &trans
-  &trans   &trans    &trans    &trans    &mo 3    &trans    &trans    &trans    &trans    &trans    &trans    &trans 
            >;
         };
     
         adjust_layer {
             bindings = <
   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &none &none &none &none &none &none
-  &none      &none        &none        &none        &none        &none        &none &none &none &none &none &none
-  &none      &none        &none        &none        &none        &none        &none &none &none &none &none &none
-  &none      &none        &none        &none        &none        &none        &none &none &none &none &none &none
            >;
         };
     };
