@@ -16,22 +16,20 @@
         };
 
         lower_layer {
-// TODO: fix undesrcope after the mkp feature is added
             bindings = <
-   &trans   &none     &kp LBKT  &kp RBKT  &none     &none     &none     &none     &kp MINUS &kp MINUS &none     &trans
-   &kp GRAV &kp NUM_1 &kp NUM_2 &kp NUM_3 &kp NUM_4 &kp NUM_5 &kp NUM_6 &kp NUM_7 &kp NUM_8 &kp NUM_9 &kp NUM_0 &kp PIPE
-   &trans   &none     &trans    &none     &none     &none     &none     &none     &trans    &trans    &trans    &trans
-   &trans   &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans 
+   &trans   &none     &kp LBKT  &kp RBKT  &none     &none     &none     &none     &kp LS(MINUS) &kp MINUS &none     &trans
+   &kp GRAV &kp NUM_1 &kp NUM_2 &kp NUM_3 &kp NUM_4 &kp NUM_5 &kp NUM_6 &kp NUM_7 &kp NUM_8     &kp NUM_9 &kp NUM_0 &kp BSLH
+   &trans   &none     &trans    &none     &none     &none     &none     &none     &trans        &trans    &trans    &trans
+   &trans   &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans        &trans    &trans    &trans 
             >;
         };
 
         raise_layer {
-// TODO: fix this layer once mkp feature is added
             bindings = <
-  &trans       &none     &kp LBKT  &kp RBKT  &none     &none     &none     &none     &kp MINUS &kp MINUS &none     &trans
-  &kp LS(GRAV) &kp LS(NUM_1) &kp NUM_2 &kp NUM_3 &kp NUM_4 &kp NUM_5 &kp NUM_6 &kp NUM_7 &kp NUM_8 &kp NUM_9 &kp NUM_0 &kp PIPE
-  &trans   &none     &trans    &none     &none     &none     &none     &none     &trans    &trans    &trans    &trans
-  &trans   &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans 
+  &trans       &none         &kp LS(LBKT)  &kp LS(RBKT)  &none         &none         &none         &none         &kp LS(EQL)   &kp EQL       &none         &trans
+  &kp LS(GRAV) &kp LS(NUM_1) &kp LS(NUM_2) &kp LS(NUM_3) &kp LS(NUM_4) &kp LS(NUM_5) &kp LS(NUM_6) &kp LS(NUM_7) &kp LS(NUM_8) &kp LS(NUM_9) &kp LS(NUM_0) &kp LS(BSLH)
+  &trans       &none         &trans        &none         &none         &none         &none         &none         &trans        &trans        &trans        &trans
+  &trans       &trans        &trans        &trans        &trans        &trans        &trans        &trans        &trans        &trans        &trans      3  &trans 
            >;
         };
     
