@@ -11,7 +11,7 @@
    &kp TAB   &kp Q &kp W    &kp F    &kp P &kp B   &kp J   &kp L &kp U    &kp Y    &kp SCLN &kp BKSP
    &lt 3 ESC &kp A &kp R    &kp S    &kp T &kp G   &kp M   &kp N &kp E    &kp I    &kp O    &mt RCTL QUOT
    &kp RSFT  &kp Z &kp X    &kp C    &kp D &kp V   &kp K   &kp H &kp CMMA &kp DOT  &kp FSLH &mt LSFT RET
-   &kp LCTL  &none &kp LALT &kp LGUI &mo 1 &kp SPC &kp SPC &mo 2 &kp LARW &kp DARW &kp UARW &kp RARW
+   &kp LCTL  &none &kp LALT &kp LGUI &mo 1 &kp SPC &kp SPC &mo 2 &kp RGUI &kp RALT &none    &kp RCTL
             >;
         };
 
@@ -20,7 +20,7 @@
    &trans   &none     &kp LBKT  &kp RBKT  &none     &none     &none     &none     &kp LS(MINUS) &kp MINUS &none     &trans
    &kp GRAV &kp NUM_1 &kp NUM_2 &kp NUM_3 &kp NUM_4 &kp NUM_5 &kp NUM_6 &kp NUM_7 &kp NUM_8     &kp NUM_9 &kp NUM_0 &kp BSLH
    &trans   &none     &trans    &none     &none     &none     &none     &none     &trans        &trans    &trans    &trans
-   &trans   &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans        &trans    &trans    &trans 
+   &trans   &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans        &trans    &trans    &trans
             >;
         };
 
@@ -29,10 +29,10 @@
   &trans       &none         &kp LS(LBKT)  &kp LS(RBKT)  &none         &none         &none         &none         &kp LS(EQL)   &kp EQL       &none         &trans
   &kp LS(GRAV) &kp LS(NUM_1) &kp LS(NUM_2) &kp LS(NUM_3) &kp LS(NUM_4) &kp LS(NUM_5) &kp LS(NUM_6) &kp LS(NUM_7) &kp LS(NUM_8) &kp LS(NUM_9) &kp LS(NUM_0) &kp LS(BSLH)
   &trans       &none         &trans        &none         &none         &none         &none         &none         &trans        &trans        &trans        &trans
-  &trans       &trans        &trans        &trans        &trans        &trans        &trans        &trans        &trans        &trans        &trans        &trans 
+  &trans       &trans        &trans        &trans        &trans        &trans        &trans        &trans        &trans        &trans        &trans        &trans
            >;
         };
-    
+
         nav_layer {
             bindings = <
   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &none    &none    &kp PGUP &kp PGDN &none  &none
@@ -42,5 +42,5 @@
            >;
         };
     };
-    
+
 };
