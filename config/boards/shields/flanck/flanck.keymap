@@ -1,6 +1,10 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/outputs.h>
+
+#define SCROT LC(LS(LG(NUM_4)))
+#define P_TEXT RS(RA(RG(V)))
 
 / {
     keymap {
@@ -8,10 +12,10 @@
 
         default_layer {
             bindings = <
-   &kp TAB   &kp Q &kp W    &kp F    &kp P &kp B   &kp J   &kp L &kp U    &kp Y    &kp SCLN &kp BKSP
-   &lt 3 ESC &kp A &kp R    &kp S    &kp T &kp G   &kp M   &kp N &kp E    &kp I    &kp O    &mt RCTL QUOT
-   &kp RSFT  &kp Z &kp X    &kp C    &kp D &kp V   &kp K   &kp H &kp CMMA &kp DOT  &kp FSLH &mt LSFT RET
-   &kp LCTL  &none &kp LALT &kp LGUI &mo 1 &kp SPC &kp SPC &mo 2 &kp RGUI &kp RALT &none    &kp RCTL
+   &kp TAB   &kp   Q &kp W  &kp F    &kp P &kp B   &kp J   &kp L &kp U    &kp Y    &kp SCLN &kp BKSP
+   &lt 3 ESC &kp   A &kp R  &kp S    &kp T &kp G   &kp M   &kp N &kp E    &kp I    &kp O    &mt RCTL QUOT
+   &kp RSFT  &kp   Z &kp X  &kp C    &kp D &kp V   &kp K   &kp H &kp CMMA &kp DOT  &kp FSLH &mt LSFT RET
+   &kp LCTL  &mo 4 &kp LALT &kp LGUI &mo 1 &kp SPC &kp SPC &mo 2 &kp RGUI &kp RALT &mo 4    &kp RCTL
             >;
         };
 
@@ -35,10 +39,19 @@
 
         nav_layer {
             bindings = <
-  &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &none    &none    &kp PGUP &kp PGDN &none  &none
-  &trans     &none        &none        &none        &kp LSFT     &none        &kp LARW &kp DARW &kp UARW &kp RARW &none  &none
-  &trans     &none        &none        &none        &none        &none        &none    &none    &kp HOME &kp END  &none  &none
-  &trans     &trans       &trans       &trans       &trans       &trans       &trans   &trans   &trans   &trans   &trans &trans
+  &trans &none  &none  &none  &none    &none  &none    &none    &kp PGUP &kp PGDN &none  &none
+  &trans &none  &none  &none  &kp LSFT &none  &kp LARW &kp DARW &kp UARW &kp RARW &none  &none
+  &trans &none  &none  &none  &none    &none  &none    &none    &kp HOME &kp END  &none  &none
+  &trans &trans &trans &trans &trans   &trans &trans   &trans   &trans   &trans   &trans &trans
+           >;
+        };
+
+        misc_layer {
+            bindings = <
+  &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &out OUT_TOG  &none  &none  &none  &none  &none
+  &trans     &none        &none        &none        &none        &none        &none         &none  &none  &none  &none  &none
+  &trans     &none        &kp SCROT    &none        &none        &kp P_TEXT   &none         &none  &none  &none  &none  &none
+  &trans     &trans       &trans       &trans       &trans       &trans       &trans        &trans &trans &trans &trans &trans
            >;
         };
     };
