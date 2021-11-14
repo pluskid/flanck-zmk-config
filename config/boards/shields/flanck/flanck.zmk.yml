@@ -1,0 +1,9 @@
+file_format: "1"
+id: flanck
+name: Flanck
+type: shield
+url: https://github.com/pluskid/keyboards/tree/main/flanck
+requires:
+  - pro_micro
+features:
+  - keys

@@ -14,14 +14,14 @@
             bindings = <
    &kp TAB    &kp   Q &kp W  &kp E    &kp R &kp T     &kp Y     &kp U &kp I     &kp O    &kp P          &kp BACKSPACE
    &lt 3 ESC  &kp   A &kp S  &kp D    &kp F &kp G     &kp H     &kp J &kp K     &kp L    &mt RCTRL SEMI &kp SINGLE_QUOTE
-   &kp RSHIFT &kp   Z &kp X  &kp C    &kp V &kp B     &kp N     &kp M &kp COMMA &kp DOT  &kp FSLH       &mt LSHIFT RET
+   &kp LSHIFT &kp   Z &kp X  &kp C    &kp V &kp B     &kp N     &kp M &kp COMMA &kp DOT  &kp FSLH       &mt RSHIFT RET
    &kp LCTRL  &none &kp LALT &kp LGUI &mo 1 &kp SPACE &kp SPACE &mo 2 &kp RGUI  &kp RALT &none          &kp RCTRL
             >;
         };
 
         lower_layer {
             bindings = <
-   &trans    &none     &kp LBKT  &kp RBKT  &none     &none     &none     &none     &kp LS(MINUS) &kp MINUS &none     &trans
+   &trans    &none     &kp LBKT  &kp RBKT  &none     &none     &none     &none     &kp RS(MINUS) &kp MINUS &none     &trans
    &kp GRAVE &kp N1    &kp N2    &kp N3    &kp N4    &kp N5    &kp N6    &kp N7    &kp N8        &kp N9    &kp N0    &kp BSLH
    &trans    &none     &trans    &none     &none     &none     &none     &none     &trans        &trans    &trans    &trans
    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &mo 4     &trans        &trans    &trans    &trans
@@ -30,8 +30,8 @@
 
         raise_layer {
             bindings = <
-  &trans        &none         &kp LS(LBKT)  &kp LS(RBKT)  &none         &none         &none         &none         &kp LS(EQUAL) &kp EQUAL      &none         &trans
-  &kp LS(GRAVE) &kp LS(N1)    &kp LS(N2)    &kp LS(N3)    &kp LS(N4)    &kp LS(N5)    &kp LS(N6)    &kp LS(N7)    &kp LS(N8)    &kp LS(N9)    &kp LS(N0)    &kp LS(BSLH)
+  &trans        &none         &kp RS(LBKT)  &kp RS(RBKT)  &none         &none         &none         &none         &kp RS(EQUAL) &kp EQUAL      &none         &trans
+  &kp RS(GRAVE) &kp RS(N1)    &kp RS(N2)    &kp RS(N3)    &kp RS(N4)    &kp RS(N5)    &kp RS(N6)    &kp RS(N7)    &kp RS(N8)    &kp RS(N9)    &kp RS(N0)    &kp RS(BSLH)
   &kp CAPS      &none         &trans        &none         &none         &none         &none         &none         &trans        &trans        &trans        &trans
   &trans        &trans        &trans        &trans        &mo 4         &trans        &trans        &trans        &trans        &trans        &trans        &trans
            >;
@@ -39,10 +39,10 @@
 
         nav_layer {
             bindings = <
-  &trans &none  &none  &none  &none      &none  &none    &none    &kp PG_UP &kp PG_DN &none  &none
-  &trans &none  &none  &none  &kp LSHIFT &none  &kp LEFT &kp DOWN &kp UP    &kp RIGHT &none  &none
-  &trans &none  &none  &none  &none      &none  &none    &none    &kp HOME  &kp END   &none  &none
-  &trans &trans &trans &trans &trans     &trans &trans   &trans   &trans    &trans    &trans &trans
+  &trans &none  &none  &none  &none      &none  &none    &none    &kp LG(UP)   &kp LG(DOWN)  &none  &none
+  &trans &none  &none  &none  &kp LSHIFT &none  &kp LEFT &kp DOWN &kp UP       &kp RIGHT     &none  &none
+  &trans &none  &none  &none  &none      &none  &none    &none    &kp LG(LEFT) &kp LG(RIGHT) &none  &none
+  &trans &trans &trans &trans &trans     &trans &trans   &trans   &trans       &trans        &trans &trans
            >;
         };
 
